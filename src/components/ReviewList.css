@@ -1,0 +1,41 @@
+.review-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1717;
+}
+
+/* Gradient overlay for fade effect */
+.review-list::before,
+.review-list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Left side fade */
+.review-list::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+}
+
+/* Right side fade */
+.review-list::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.review-cards {
+  display: inline-flex;
+  position: relative;
+  z-index: 2;
+  transition: transform 0s linear;
+}

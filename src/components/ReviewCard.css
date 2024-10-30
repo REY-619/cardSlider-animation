@@ -1,0 +1,95 @@
+.review-card {
+  display: inline-block;
+  justify-content: center;
+  width: 90%; /* Set width to 90% for responsiveness */
+  max-width: 300px; /* Maximum width to maintain design */
+  height: 300px;
+  margin: 10px;
+  border: 1px solid #222020;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  background-color: #222020;
+  transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+/* Keyframes for moving up and down */
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animate every card, but alternate delays */
+.review-card {
+  animation: moveUpDown 3s ease-in-out infinite;
+}
+
+/* Apply staggered start delays for alternate cards */
+.review-card:nth-child(odd) {
+  animation-delay: 0s;
+}
+
+.review-card:nth-child(even) {
+  animation-delay: 1.5s;
+}
+
+/* Center the photo within each card */
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.review-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive text wrapping for reviews */
+.review-text {
+  text-align: center;
+  margin: 0 auto; /* Center the text */
+  width: 80%; /* Limit text width for better readability */
+  max-width: 280px;
+  width: 275px; /* Maximum width for text */
+  text-wrap: wrap;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .review-card {
+    width: 95%; /* Adjust width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
+  }
+
+  .review-photo {
+    width: 60px; /* Adjust photo size */
+    height: 60px;
+  }
+
+  .review-text {
+    text-align: center;
+    margin: 0 auto; /* Center the text */
+    width: 70%; /* Limit text width for better readability */
+    max-width: 250px;
+    width: 200px; /* Maximum width for text */
+    text-wrap: wrap;
+  }
+}
