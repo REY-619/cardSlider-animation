@@ -37,5 +37,5 @@
   display: inline-flex;
   position: relative;
   z-index: 2;
-  transition: transform 0s linear;
+  /* transition: transform 0s linear; */
 }
