@@ -12,7 +12,7 @@ const ReviewCard = ({ review, animationDirection }) => {
         <img src={review.photo} alt={review.name} className="review-photo" />
       </div>
       <h3 className="font-medium text-gray-300">{review.name}</h3>
-      <p className="text-center review-text  font-normal">{review.review}</p>
+      <p className="text-center review-text font-normal">{review.review}</p>
     </div>
   );
 };

@@ -109,10 +109,10 @@ const ReviewList = () => {
   return (
     <div className="review-list flex flex-col" ref={listRef}>
       <div className="flex justify-center flex-col ">
-        <h1 className="p-5 text-3xl md:text-5xl text-center font-bold mt-8 font-montserrat ">
+        <h1 className="p-5 text-3xl md:text-5xl text-center font-bold my-4 font-montserrat ">
           What User says
         </h1>
-        <h2 className="p-4 my-4 text-xl sm:w-[300px] md:w-[600px] lg:w-[1065px] text-wrap text-center font-normal">
+        <h2 className="p-4 mb-4 text-xl sm:w-[300px] md:w-[600px] lg:w-[1065px] text-wrap text-center font-normal">
           Testimonials speak louder than words! Customer stories that light up
           our day
         </h2>
