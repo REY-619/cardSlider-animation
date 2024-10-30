@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;600&display=swap");
+
 .review-list {
   position: relative;
   display: flex;
@@ -9,6 +11,14 @@
   background-color: #1a1717;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif; /* Apply Montserrat font to titles */
+  font-weight: 700; /* Set font weight */
+}
+
+p {
+  font-family: "Poppins", sans-serif; /* Ensure paragraphs also use Poppins */
+}
 /* Gradient overlay for fade effect */
 .review-list::before,
 .review-list::after {

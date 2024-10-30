@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 .review-card {
   display: inline-block;
   justify-content: center;
@@ -10,7 +12,8 @@
   padding: 10px 5px 5px 5px;
   text-align: center;
   background-color: #222020;
-  transition: transform 0.3s; /* Smooth transition on hover */
+  transition: transform 0.3s;
+  font-family: "Poppins", sans-serif; /* Smooth transition on hover */
 }
 
 /* Keyframes for moving up and down */
